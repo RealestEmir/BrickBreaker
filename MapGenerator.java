@@ -16,6 +16,7 @@ public class MapGenerator {
         brickHeight = 150/row;
 
     }
+
     public void draw(Graphics2D g){
         for (int i = 0; i < map.length; i++){
             for(int j = 0; j < map[0].length; j++){
@@ -29,5 +30,10 @@ public class MapGenerator {
                 }
             }
         }
+    }
+
+    public void setBrickValue(int value, int row, int col){
+        map[row][col] = value;
+        
     }
 }
